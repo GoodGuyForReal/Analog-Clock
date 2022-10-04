@@ -48,7 +48,7 @@ function clock() {
     let saat = time.getHours();
     let dakika = time.getMinutes();
     let saniye = time.getSeconds();
-    let twelve = saat - 12;
+    let twelve = saat % 12;
     if (saat < 12) {
         loc.innerHTML = `${twelve}:${dakika}:${saniye}AM`;
         user.innerHTML = ` <h1 class="welcometxt" id="welcometxt">Good <span class="spanimg"><img id="welcomeimg" class="welcomeimg"
